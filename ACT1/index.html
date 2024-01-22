@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Act 1</title>
+    <style>
+        .button-container {
+            margin: 10px;
+            display: inline-block;
+        }
+
+        button {
+            border-radius: 30px;
+            width: 250px;
+            cursor: pointer;
+            margin-right: 50px;
+            padding: 30px;
+        }
+
+        .b1 {
+            background-color: rgb(241, 200, 207);
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+        }
+       
+
+        .b2 {
+            background-color: rgb(237, 237, 111);
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+        }
+    
+
+        .b3 {
+            background-color: rgb(128, 249, 7);
+            border-style: solid;
+            border-color: black;
+            border-width: 5px;
+        }
+    
+
+        body {
+            background-image: url(img/b1.gif);
+            text-align: center;
+            margin-top: 100px;
+        
+    
+        }
+        h1 {
+            text-align: center;
+            background-color:white;
+            padding: 20px;
+        }
+        p {
+           color: white;
+           font-style: italic;
+           margin-top: 65px;
+           font-weight: bold;
+        }
+
+    
+        .b1:hover {
+            background-color:rgb(244, 79, 79);
+           
+        }
+        .b2:hover {
+            background-color: rgb(68, 221, 221);
+           
+        }
+        .b3:hover {
+            background-color:coral;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <h1>JavaScript addEventListener() <br> Hands-On</h1>
+    <p>Click the Button below:</p>
+
+    <div class="button-container">
+        <button id="b1" class="b1">Button 1</button>
+    </div>
+    <div class="button-container">
+        <button id="b2" class="b2">Button 2</button>
+    </div>
+    <div class="button-container">
+        <button id="b3" class="b3">Button 3</button>
+    </div>
+
+    <script>
+        document.getElementById("b1").addEventListener("click", function1);
+        document.getElementById("b2").addEventListener("click", function2);
+        document.getElementById("b3").addEventListener("click", function3);
+
+        function function1() {
+            alert("Napindot mo yung BUTTON 1!");
+        }
+
+        function function2() {
+            alert("Yung BUTTON 2 naman ang napindot mo!");
+        }
+
+        function function3() {
+            alert("Yung BUTTON 3 naman ang napindot mo!");
+        }
+
+    </script>
+</body>
+</html>
